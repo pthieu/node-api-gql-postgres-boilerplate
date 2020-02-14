@@ -1,0 +1,49 @@
+{
+  "name": "system-boilerplate",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/the-road-to-graphql/fullstack-apollo-express-postgresql-boilerplate.svg?branch=master)](https://travis-ci.org/the-road-to-graphql/fullstack-apollo-express-postgresql-boilerplate) [![Slack](https://slack-the-road-to-learn-react.wieruch.com/badge.svg)](https://slack-the-road-to-learn-react.wieruch.com/) [![Greenkeeper badge](https://badges.greenkeeper.io/the-road-to-graphql/fullstack-apollo-express-postgresql-boilerplate.svg)](https://greenkeeper.io/)",
+  "main": "index.js",
+  "engines": {
+    "node": "10.11.0"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "start:prod": "NODE_ENV=production node src/index.js",
+    "test:run-server": "TEST_DATABASE=mytestdatabase npm start",
+    "test:execute-test": "mocha --require @babel/register 'src/**/*.spec.js'",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "keywords": [],
+  "author": "Robin Wieruch <hello@rwieruch.com> (https://www.robinwieruch.de)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/register": "^7.0.0",
+    "axios": "^0.18.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.7",
+    "morgan": "^1.9.1"
+  },
+  "dependencies": {
+    "@google/maps": "^0.5.5",
+    "apollo-server": "^2.2.3",
+    "apollo-server-express": "^2.2.3",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dataloader": "^1.4.0",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "googleapis": "^47.0.0",
+    "graphql": "^14.0.2",
+    "graphql-iso-date": "^3.6.1",
+    "graphql-resolvers": "^0.2.2",
+    "jsonwebtoken": "^8.4.0",
+    "lodash": "^4.17.15",
+    "pg": "^7.6.1",
+    "sequelize": "^4.41.2",
+    "uuid": "^3.3.2"
+  }
+}
